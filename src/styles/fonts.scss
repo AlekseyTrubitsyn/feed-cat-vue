@@ -1,0 +1,13 @@
+body {
+    font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+
+    src:
+        local("Exo2.0-Thin"),
+        url("../assets/fonts/Exo2.0-Thin.eot"),
+        url("../assets/fonts/Exo2.0-Thin.otf") format("truetype");
+}

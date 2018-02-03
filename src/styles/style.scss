@@ -1,0 +1,43 @@
+@import "fonts";
+@import "colors-and-backgrounds";
+@import "media-variables";
+
+* { box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: $min-catalog-width;
+  height: 100%;
+
+  background: $page-background;
+
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: $min-tablet-width) {
+  body {
+      height: unset;
+  }
+}
