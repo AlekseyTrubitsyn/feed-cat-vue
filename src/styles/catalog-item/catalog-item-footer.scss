@@ -13,6 +13,10 @@
     color: white;
 }
 
+.catalog-item.disabled .catalog-item__footer {
+    color: $yellow;
+}
+
 .catalog-item-footer__link,
 .catalog-item-footer__link + span {
     color: $item-default-color;
@@ -24,11 +28,6 @@
     text-decoration: none;
 
     border-bottom: 1px dashed $item-default-color;
-}
-
-.catalog-item__footer-text--selected,
-.catalog-item__footer-text--disabled {
-    display: none;
 }
 
 .catalog-item:hover {
