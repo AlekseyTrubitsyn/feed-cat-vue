@@ -31,9 +31,9 @@
       <p class="catalog-item-main__quantity"><span>{{ item.size }}</span><span>кг</span></p>
     </div>
     <div class="catalog-item__footer ignore-click">
-      <p v-show="!item.disabled && selected">{{ item.footerDescription }}</p>
-      <p v-show="!item.disabled && !selected">Чего сидишь? Порадуй котэ, <a class="catalog-item-footer__link" href="#">купи</a><span>.</span></p>
-      <p v-if="item.disabled">Печалька, с {{ item.subtitle }} закончился.</p>
+      <p v-show="!disabled && selected">{{ item.footerDescription }}</p>
+      <p v-show="!disabled && !selected">Чего сидишь? Порадуй котэ, <a class="catalog-item-footer__link" href="#">купи</a><span>.</span></p>
+      <p v-if="disabled">Печалька, с {{ item.subtitle }} закончился.</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,8 @@ export default {
       itemState: 0,
       selected: false,
       ignoreHover: false,
-      showHoverText: false
+      showHoverText: false,
+      disabled: this.item.disabled
     };
   },
   computed: {
