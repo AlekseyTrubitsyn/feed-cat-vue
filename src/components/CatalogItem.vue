@@ -33,7 +33,7 @@
     <div class="catalog-item__footer ignore-click">
       <p v-show="!disabled && selected">{{ item.footerDescription }}</p>
       <p v-show="!disabled && !selected">Чего сидишь? Порадуй котэ, <a class="catalog-item-footer__link" href="#">купи</a><span>.</span></p>
-      <p v-if="disabled">Печалька, с {{ item.subtitle }} закончился.</p>
+      <p v-if="disabled">Печалька, {{ item.subtitle }} закончился.</p>
     </div>
   </div>
 </template>
